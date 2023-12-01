@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HEALET</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    /* Header Section */
+   
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    /* Header Section */
+    .header {
+      width: 1350px;
+      height: 72px;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: 9;
+    }
+    .header .h-paragraph {
+      padding-left: 25px;
+      width: 100%;
+      margin-right: auto;
+      margin-left: auto;
+      margin-top: 20px;
+      display: inline-block;
+      padding-right: 25px;
+    }
+    .header .h-paragraph p {
+      font-size: 24px;
+      font-weight: 700;
+      height: 33px;
+      width: 86px;
+      color: #ffffff;
+    }
+    
+    .slider {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      position: relative !important;
+      height: 45opx;
+    }
+    .slider .image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+      overflow: hidden;
+    }
+    .slider .image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top right;
+      vertical-align: middle;
+    }
+    .slider .slider-content {
+      height: 450px;
+      width: 730px;
+      position: relative;
+      z-index: 4;
+      color: #ffffff;
+      padding: 75px 120px;
+      /*! margin-left: auto; */
+      /*! margin-right: auto; */
+    }
+    .slider-content h1 {
+      height: 115px;
+      font-weight: bold;
+      font-size: 55px;
+      line-height: 1.2;
+    }
+    .slider-content p {
+      width: 75%;
+      margin-top: 50px;
+      height: 80px;
+      font-size: 20px;
+      line-height: 1.4;
+    }
+    .slider .slider-content .slider-btn a {
+      display: inline-block;
+      padding: 10px 45px;
+      color: #fd9c6b;
+      text-decoration: none;
+      border: 1px solid #fd9c6b;
+      border-radius: 5px;
+      margin-top: 100px;
+      font-size: 25px;
+    }
+    .slider .slider-content .slider-btn a:hover {
+      color: black;
+      background-color: white;
+    }
+/* Products Section  */
+
+    .products {
+      padding: 90px 0;
+    }
+    .products .pro-head {
+      margin-bottom: 20px;
+      text-align: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      /* width: 1140px; */
+      height: 39px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    .products .pro-head h1 {
+      position: relative;
+      font-weight: bold;
+      width: 308px;
+      height: 38px;
+      font-size: 30px;
+    }
+    
+    .products-items {
+      width: 1170px;
+      height: 635px;
+      display: flex;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    .prodeuct-land {
+    max-width: 1170px;
+    display: flex;
+    flex-wrap: wrap;
+    }
+    .products-items .single-products {
+      width: 235px;
+      height: 296px;
+      background-color: #eeeeee;
+      position: relative;
+      padding: 15px;
+      margin-top: 25px;
+      max-width: 25%;
+      margin-right: 25px;
+    }
+    .products-items .pro-sing-img {
+      width: 210px;
+      height: 245px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 15px 30px;
+    }
+    .products-items .pro-sing-img img {
+      max-width: 100%;
+      max-height: 150px;
+      margin-right: 35px;
+      margin-bottom: 25px;
+    }
+    .products .pro-details {
+      width: 242px;
+      height: 28px;
+      display: flex;
+      justify-content: space-between;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .products .pro-details h6 {
+      font-size: 18px;
+      font-weight: 500;
+      margin-bottom: 10px;
+      margin-top: -10px;
+      line-height: 1.2;
+      height: 19px;
+    }
+    .products .pro-details span {
+      color: #fd9c6b;
+    }
+    .products-items .pro-new {
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background-color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 100%;
+      font-size: 15px;
+    }
+    
+    /* PRODUCTS SECTION */
+
+    .products .pro-paragraph {
+      height: 55px;
+      display: flex;
+      justify-content: center;
+      margin-top: 130px;
+    }
+    .products .pro-paragraph a {
+      text-decoration: none;
+      font-size: 25px;
+      padding: 10px 30px;
+      background-color: black;
+      color: wheat;
+      display: inline-block;
+      border-radius: 10px;
+      transition: .5s;
+      border: 2px solid yellow;
+    }
+    .shop_section .btn-box a:hover {
+      background-color: gold;
+    }
+    .products .pro-paragraph a:hover {
+      background-color: darkblue;
+      color: white;
+    }
+    
+  /* About Section    */
+  .about .about-wrap {
+    max-width: 1170px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    align-items: center;
+    display: flex;
+    height: 380px;
+  }
+  .about .about-left {
+    flex: 0 0 50%;
+    max-width: 50%;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .aboout .about-img {
+    position: relative;
+    padding: 25px 0 0 25px;
+  }
+  .about .about-img img {
+    width: 100%;
+    position: relative;
+    vertical-align: middle;
+    border-style: none;
+  }
+  .about .about-right {
+    max-width: 50%;
+    margin-left: 20px;
+    height: 240px;
+  }
+  .about .about-right-cont {
+    display: flex;
+    flex-direction: column;
+  }
+  .about .about-right-cont h1 {
+    position: relative;
+    font-weight: bold;
+    margin: 0px;
+    font-size: 30px;
+    line-height: 1.2;
+    height: 38px;
+    width: 163px;
+  }
+  .about .about-right-cont p {
+    margin-top: 10px;
+    margin-bottom: 35px;
+    line-height: 1.2;
+    /* font-weight: 406px; */
+    font-size: 20px;
+    height: 100px;
+  }
+  .about .about-right-btn {
+    margin-top: 20px;
+  }
+  .about .about-right-btn a {
+    display: inline-block;
+    padding: 15px 45px;
+    text-decoration: none;
+    background-color: #fd9c6b;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: .5s;
+  }
+  .about .about-right-btn a:hover {
+    background-color: black;
+    color: wheat;
+    /* border: 1px solid red; */
+
+  }
+  
+  /* Offer Section */
+
+    .offer {
+      padding: 90px 0;
+    }
+    .offer .offer-section-wrap {
+      height: 520px;
+      width: 100%;
+      display: flex;
+      margin-left: auto;
+      margin-right: auto;
+      /* padding-left: 15px; */
+      padding-right: 15px;
+      box-sizing: border-box;
+    }
+    .offer .offer-left {
+      display: flex;
+      flex-direction: column;
+      justify-content: stretch;
+    }
+    .offer .offer-left .offer-box1 {
+      height: 500px;
+      width: 766px;
+      margin: 10px;
+      position: relative;
+    }
+    .offer .offer-left .offer-box1 .offer-detail-box {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #fff;
+    padding: 25px;
+    box-sizing: border-box;
+    }
+    .offer .offer-left .offer-detail-box h2 {
+      font-size: 50px;
+    }
+    .offer .offer-left .offer-detail-box a {
+    display: inline-block;
+    padding: 8px 40px;
+    text-decoration: navajowhite;
+    margin-top: 20px;
+    font-size: 25px;
+    color: #fd9c;
+    border: 1px solid #fd9c;
+    border-radius: 5px;
+    transition: .5s;
+    }
+    .offer .offer-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    }
+    .offer .offer-right .offer-box2 {
+      height: 240px;
+      width: 542px;
+      margin: 10px;
+      position: relative;
+    }
+    .offer .offer-right .offer-box2 .offer-detail-box {
+    height: 240px;
+    width: 542px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    top: 0;
+    left: 0;
+    color: #fff;
+    padding: 25px;
+    box-sizing: border-box;
+    }
+    .offer .offer-right .offer-box2 .offer-detail-box h2 {
+    font-size: 31px;
+    }
+    .offer .offer-right .offer-box2 .offer-detail-box a {
+    display: inline-block;
+    padding: 8px 40px;
+    text-decoration: navajowhite;
+    margin-top: 20px;
+    font-size: 25px;
+    color: #fd9c;
+    border: 1px solid #fd9c;
+    border-radius: 5px;
+    transition: .5s;
+    }
+    .offer .offer-right .offer-box3 {
+      height: 240px;
+      width: 542px;
+      margin: 10px;
+      position: relative;
+    }
+    .offer .offer-right .offer-box3 .offer-detail-box {
+    height: 240px;
+    width: 542px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    top: 0;
+    left: 0;
+    color: #fff;
+    padding: 25px;
+    box-sizing: border-box;
+    }
+    .offer .offer-right .offer-box3 .offer-detail-box h2 {
+    font-size: 32px;
+    }
+    .offer .offer-right .offer-box3 .offer-detail-box a {
+    display: inline-block;
+    padding: 8px 40px;
+    text-decoration: navajowhite;
+    margin-top: 20px;
+    font-size: 25px;
+    color: #fd9c;
+    border: 1px solid #fd9c;
+    border-radius: 5px;
+    transition: .5s;
+    }
+    .offer .offer-left .offer-detail-box {
+      height: 500px;
+      width: 766px;
+    }
+    .offer .offer-right .offer-box2 .offer-detail-box {
+      height: 240px;
+      width: 542px;
+    }
+    .offer .offer-right .offer-box3 .offer-detail-box {
+      height: 240px;
+      width: 542px;
+    }
+    .offer .offer-left .offer-box1 img {
+      width: 100%;
+      min-height: 100%;
+    }
+    .offer .offer-right .offer-box2 img {
+      width: 100%;
+      min-height: 100%;
+    }
+    .offer .offer-right .offer-box3 img {
+      width: 100%;
+      min-height: 100%;
+    }
+    .offer a:hover{
+      background-color: black;
+      color: white!important;
+    }
+  
+  </style>
+</head>
+<body>
+<section class="header">
+  <div class="h-paragraph">
+    <p>HEALET</p>
+  </div>
+</section>
+<section class="slider">
+  <div class="image">
+    <img src="/Image/slider-bg.jpg" alt="">
+  </div>
+  <div class="slider-content">
+    <h1>Best Jewellery <br> Collecttion </h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, sint! Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, dolor?
+    </p>
+    <div class="slider-btn">
+      <a href="">Shop Now</a>
+    </div>
+  </div>
+</section>
+<section class="products">
+  <div class="pro-head">
+    <h1>LATEST PRODUCTS</h1>
+  </div> 
+  <div class="products-items">
+    <div class="prodeuct-land">
+      <div class="single-products">
+        <div class="pro-sing-img">
+          <img src="/Image/p1.png" alt="">
+        </div>
+        <div class="pro-details">
+          <h6>Necklace</h6>
+          <h6>Price
+            <span>$200</span>
+          </h6>
+        </div>
+        <div class="pro-new">
+          <span>New</span>
+        </div>
+      </div>
+      <div class="single-products">
+        <div class="pro-sing-img">
+          <img src="/Image/p2.png" alt="">
+        </div>
+        <div class="pro-details">
+          <h6>Necklace</h6>
+          <h6>Price
+            <span>$300</span>
+          </h6>
+        </div>
+        <div class="pro-new">
+          <span>New</span>
+        </div>
+      </div>
+      <div class="single-products">
+        <div class="pro-sing-img">
+          <img src="/Image/p3.png" alt="">
+        </div>
+        <div class="pro-details">
+          <h6>Necklace</h6>
+          <h6>Price
+            <span>$110</span>
+          </h6>
+        </div>
+        <div class="pro-new">
+          <span>New</span>
+        </div>
+      </div>
+      <div class="single-products">
+        <div class="pro-sing-img">
+          <img src="/Image/p4.png" alt="">
+        </div>
+        <div class="pro-details">
+          <h6>Ring</h6>
+          <h6>Price
+            <span>$45</span>
+          </h6>
+        </div>
+        <div class="pro-new">
+          <span>New</span>
+        </div>
+      </div>
+      <div class="single-products">
+        <div class="pro-sing-img">
+          <img src="/Image/p5.png" alt="">
+        </div>
+        <div class="pro-details">
+          <h6>Ring</h6>
+          <h6>Price
+            <span>$95</span>
+          </h6>
+        </div>
+        <div class="pro-new">
+          <span>New</span>
+        </div>
+      </div>
+      <div class="single-products">
+        <div class="pro-sing-img">
+          <img src="/Image/p6.png" alt="">
+        </div>
+        <div class="pro-details">
+          <h6>Earrings</h6>
+          <h6>Price
+            <span>$70</span>
+          </h6>
+        </div>
+        <div class="pro-new">
+          <span>New</span>
+        </div>
+      </div>
+      <div class="single-products">
+        <div class="pro-sing-img">
+          <img src="/Image/p7.png" alt="">
+        </div>
+        <div class="pro-details">
+          <h6>Earrings</h6>
+          <h6>products
+            <span>$400</span>
+          </h6>
+        </div>
+        <div class="pro-new">
+          <span>New</span>
+        </div>
+      </div>
+      <div class="single-products">
+        <div class="pro-sing-img">
+          <img src="/Image/p8.png" alt="">
+        </div>
+        <div class="pro-details">
+          <h6>Necklace</h6>
+          <h6>products
+            <span>$450</span>
+          </h6>
+        </div>
+        <div class="pro-new">
+          <span>New</span>
+        </div>
+      </div>
+    </div>
+  </div> 
+  <div class="pro-paragraph">
+    <a href="">View All Products</a>
+  </div>
+</section>
+<section class="about">
+  <div class="about-wrap">
+    <div class="about-left">
+      <div class="about-img">
+        <img src="/Image/about-img.jpg" alt="">
+      </div>
+    </div>
+    <div class="about-right">
+      <div class="about-right-cont">
+        <h1>ABOUT US</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus unde sapiente eveniet voluptatibus temporibus adipisci ex voluptatum voluptate id aspernatur asperiores, non reprehenderit nam sint.</p>
+      </div>
+      <div class="about-right-btn">
+        <a href="">Read More</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="offer">
+  <div class="offer-section-wrap">
+    <div class="offer-left">
+      <div class="offer-box1">
+        <img src="/Image/o1.jpg" alt="">
+        <div class="offer-detail-box">
+          <h2>Upto 15% Off</h2>
+          <a href="">Shop Now</a>
+        </div>
+      </div>
+    </div>
+    <div class="offer-right">
+      <div class="offer-box2">
+        <img src="/Image/o2.jpg" alt="">
+        <div class="offer-detail-box">
+          <h2>Upto 10% Off</h2>
+          <a href="">Shop Now</a>
+        </div>
+      </div>
+      <div class="offer-box3">
+        <img src="/Image/o3.jpg" alt="">
+        <div class="offer-detail-box">
+          <h2>Upto 20% Off</h2>
+          <a href="">Shop Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h1 class="test">heading</h1>
+</section>
+</body>
+</html>
